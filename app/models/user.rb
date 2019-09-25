@@ -8,14 +8,14 @@ class User < ApplicationRecord
   validates_confirmation_of :password, allow_nil: true, allow_blank: false
 
   before_validation {
-    (self.email = self.email.to_s.downcase) && (self.username = self.username.to_s.downcase)
+    (self.email = self.email.to_s.downcase) && (self.name = self.name.to_s.downcase)
   }
 
   # Make sure email and username are present and unique.
   validates_presence_of     :email
-  validates_presence_of     :username
+  validates_presence_of     :name
   validates_uniqueness_of   :email
-  validates_uniqueness_of   :username
+  validates_uniqueness_of   :name
 
   # This method gives us a simple call to check if a user has permission to modify.
   def can_modify_user?(user_id)
