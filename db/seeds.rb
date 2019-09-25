@@ -1,7 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+User.create(email: "job@localhost.com", password: "Aa@123456", name: "joe")
+service = Service.create(name: "Post service", url: "http://localhost:5001", token: "post-service-sample-token")
+Route.create(service: service, verb: "get", url_pattern: "posts", version: "v1")
