@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   # Home controller routes.
   root   'home#index'
   get    'auth'            => 'home#auth'
+
+  resources :routes
+  resources :services
 end
