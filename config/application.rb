@@ -31,5 +31,6 @@ module ApiGateway
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    Dir["#{Rails.root}/app/services/**/*.rb"].sort.each { |f| require(f) }
   end
 end
