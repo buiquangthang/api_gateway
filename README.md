@@ -42,21 +42,16 @@ You can see a list of gems that are in the project with a link to their commit. 
 
 ### Back-end
 
-- 1- [PostgreSQL](https://www.postgresql.org/)
-- 2- [RSpec](https://github.com/rspec/rspec-metagem) 
-- 3- [Factory Bot Rails](https://github.com/thoughtbot/factory_bot_rails)
-- 4- [Faker](https://github.com/faker-ruby/faker) 
-- 5- [Database Cleaner](https://github.com/DatabaseCleaner/database_cleaner)
-- 6- [SimpleCov](https://github.com/simplecov-ruby/simplecov) ([commit](https://github.com/zakariaf/rails-base-app/commit/a1e629b26bf45f008d27ca4ae1a794de65581e2c))
-- 7- Rubocop(Check the [**Healthy app/Backend**](#healthy-app) part)
-- 8- [Annotate](https://github.com/ctran/annotate_models)
-- 9- [Pry](https://github.com/pry/pry)
-- 10- [Pagy](https://github.com/ddnexus/pagy) 
-- 11- [HasScope](https://github.com/heartcombo/has_scope)
-- 12- [JSON:API serializer](https://github.com/jsonapi-serializer/jsonapi-serializer) A fast JSON:API serializer for Ruby Objects ([commit](https://github.com/zakariaf/rails-base-app/commit/c57cb9db2c0df761e48bdae77971d5fd093033bb))
-  - [jsonapi.rb](https://github.com/stas/jsonapi.rb) which provides some features for `jsonapi-serializer` [PR](https://github.com/zakariaf/rails-base-app/pull/9), [commit](https://github.com/zakariaf/rails-base-app/commit/b463d3a024513040c52b0745d042ee1fd9ea96aa) and [PR2](https://github.com/zakariaf/rails-base-app/pull/13)
-  - [jsonapi-rspec](https://github.com/jsonapi-rb/jsonapi-rspec) which provides some beautiful RSpec matchers for JSON API [PR](https://github.com/zakariaf/rails-base-app/pull/10)
-- 13- [dotenv](https://github.com/bkeepers/dotenv) ([commit](https://github.com/zakariaf/rails-base-app/commit/3aaa696c4228aac2dac40ff42591f07dc74a62bb))
+### Testing Gems ([Setup commit](https://github.com/jnicklas/capybara))
+
+* [Factory Bot](https://github.com/thoughtbot/factory_bot_rails) for test data
+* [RSpec](https://github.com/rspec/rspec) for unit testing
+* [Faker](https://github.com/faker-ruby/faker) for generating fake data
+* [Database cleaner for active record](https://github.com/DatabaseCleaner/database_cleaner-active_record) to ensure a clean state for testing.
+* [Shoulda Matchers](http://github.com/thoughtbot/shoulda-matchers) for common RSpec matchers
+* [Simplecov](https://github.com/simplecov-ruby/simplecov) for code coverage
+* [Webmock](https://github.com/bblimke/webmock) or stubbing http requests
+
 
 ### Front-end
 
